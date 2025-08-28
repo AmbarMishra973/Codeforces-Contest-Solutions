@@ -28,8 +28,10 @@ public class B_Add0orK{
 
         Scanner sc=new Scanner(System.in);
 
-        if(!sc.hasNextInt())
-        return;
+        if(!sc.hasNextInt()){
+            sc.close();
+            return;}
+            
         int t=sc.nextInt();  
         
         while(t-->0){
@@ -73,5 +75,6 @@ public class B_Add0orK{
               System.out.println();
 
         } 
+        sc.close();
        }
     }
