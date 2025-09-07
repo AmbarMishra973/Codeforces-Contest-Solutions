@@ -3,7 +3,10 @@ import java.util.*;
 public class E_Mexification {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        if (!scanner.hasNextInt()) return;
+        if (!scanner.hasNextInt()) {
+            scanner.close();
+            return;
+        }
 
         int testCases = scanner.nextInt();
 
@@ -76,5 +79,6 @@ public class E_Mexification {
 
             System.out.println(answer);
         }
+        scanner.close();
     }
 }
